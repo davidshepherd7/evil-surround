@@ -44,9 +44,8 @@ inserting angle brackets is, so you can add this:
 
 Don't worry about having two entries for `<` surround will take the first.
 
-Or in Emacs Lisp modes using \` to enter \` ' is quite useful, but not adding a
-pair of ` (the default behavior if no entry in `surround-pairs-alist` is
-present), so you can do this:
+Or in Emacs Lisp modes using \` to enter \`' is quite useful, but adding a
+pair of \` is not (the default behavior if no entry is present in `surround-pairs-alist`), so you can do this:
 
     (add-hook 'emacs-lisp-mode-hook (lambda ()
                                       (push '(?` . ("`" . "'")) surround-pairs-alist)))
